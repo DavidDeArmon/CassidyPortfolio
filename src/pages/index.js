@@ -5,19 +5,19 @@ import Layout from '../components/layout'
 // import Lightbox from 'react-images'
 import Gallery from '../components/Gallery'
 
-import thumb01 from '../assets/images/thumbs/01.jpg'
-import thumb02 from '../assets/images/thumbs/02.jpg'
-import thumb03 from '../assets/images/thumbs/03.jpg'
-import thumb04 from '../assets/images/thumbs/04.jpg'
-import thumb05 from '../assets/images/thumbs/05.jpg'
-import thumb06 from '../assets/images/thumbs/06.jpg'
+import thumb01 from '../assets/images/thumbs/07.jpg'
+import thumb02 from '../assets/images/thumbs/08.jpg'
+import thumb03 from '../assets/images/thumbs/09.jpg'
+import thumb04 from '../assets/images/thumbs/10.jpg'
+import thumb05 from '../assets/images/thumbs/11.jpg'
+import thumb06 from '../assets/images/thumbs/12.jpg'
 
-import full01 from '../assets/images/fulls/01.jpg'
-import full02 from '../assets/images/fulls/02.jpg'
-import full03 from '../assets/images/fulls/03.jpg'
-import full04 from '../assets/images/fulls/04.jpg'
-import full05 from '../assets/images/fulls/05.jpg'
-import full06 from '../assets/images/fulls/06.jpg'
+import full01 from '../assets/images/fulls/07-full.jpg'
+import full02 from '../assets/images/fulls/08-full.jpg'
+import full03 from '../assets/images/fulls/09-full.jpg'
+import full04 from '../assets/images/fulls/10-full.jpg'
+import full05 from '../assets/images/fulls/11-full.jpg'
+import full06 from '../assets/images/fulls/12-full.jpg'
 
 const DEFAULT_IMAGES = [
     { id: '1', source: full01, thumbnail: thumb01, caption: 'Photo 1', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.'},
@@ -99,7 +99,7 @@ class HomeIndex extends React.Component {
                                     </li>
                                     <li>
                                         <h3 className="icon fa-envelope-o"><span className="label">Email</span></h3>
-                                        <a href="#">hello@untitled.tld</a>
+                                        <a href="#">Cassidy@untitled.tld</a>
                                     </li>
                                 </ul>
                             </div>
