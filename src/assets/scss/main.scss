@@ -235,12 +235,17 @@
 		}
 
 		&.major {
+			text-align: center;
 			h2 {
-				font-size: 2em;
+				font-size: 4em;
 			}
 		}
 	}
-
+/* Modals */
+	.gallery{
+		width:60%;
+		height:75%
+	}
 /* Form */
 
 	form {
@@ -466,7 +471,6 @@
 
 		&.thumb {
 			text-align: center;
-
 			&:after {
 				@include vendor('transition', 'opacity #{_duration(transition)} ease-in-out');
 				border-radius: _size(border-radius);
@@ -503,6 +507,8 @@
 		img {
 			border-radius: _size(border-radius);
 			display: block;
+			width: 100%;
+			height: auto;
 		}
 
 		&.left {

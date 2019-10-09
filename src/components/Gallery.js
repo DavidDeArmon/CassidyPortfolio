@@ -3,14 +3,14 @@ import React, { Component } from 'react';
 import Carousel, { Modal, ModalGateway } from "react-images";
 
 class Gallery extends Component {
-    constructor () {
+    constructor() {
         super();
 
         this.state = {
             lightboxIsOpen: false,
             selectedIndex: 0
         };
-        
+
         this.toggleLightbox = this.toggleLightbox.bind(this);
     }
     toggleLightbox(selectedIndex) {
@@ -19,7 +19,7 @@ class Gallery extends Component {
             selectedIndex
         }));
     }
-    renderGallery (images) {
+    renderGallery(images) {
         if (!images) return;
 
         const gallery = images.map((obj, i) => {
@@ -33,22 +33,19 @@ class Gallery extends Component {
                             this.toggleLightbox(i);
                         }}
                     >
-                        <img src={obj.thumbnail} alt={obj.caption}/>
+                        <img src={obj.thumbnail} alt={obj.caption} />
                     </a>
-
-                    <h3>{obj.caption}</h3>
-                    <p>{obj.description}</p>
                 </article>
             );
         });
 
         return (
-            <div className="row">
+            <div className="row" >
                 {gallery}
             </div>
         );
     }
-    render () {
+    render() {
         const { images } = this.props;
         const { selectedIndex, lightboxIsOpen } = this.state;
 
