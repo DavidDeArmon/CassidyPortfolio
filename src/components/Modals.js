@@ -26,7 +26,6 @@ class Modals extends React.Component {
   render() {
     return (
       <div className="gallery">
-        <button >Open Modal</button>
         <Modal
           isOpen={this.props.modalIsOpen}
           onRequestClose={this.props.closeModal}

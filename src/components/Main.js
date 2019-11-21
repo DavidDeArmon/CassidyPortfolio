@@ -16,6 +16,8 @@ function Main(props) {
                     <li><button onClick={() => { props.openModal('recentWork') }} className="button medium">Gallery</button></li>
                 </ul>
             </section>
+            <section id="two">
+            </section>
             <section id="three">
                 <h2>Get In Touch</h2>
                 <div className="12u$(small)">
