@@ -1,4 +1,5 @@
 import React from 'react'
+import EmailForm from './Email'
 
 
 
@@ -17,21 +18,8 @@ function Main(props) {
                 </ul>
             </section>
             <section id="two">
-            </section>
-            <section id="three">
-                <h2>Get In Touch</h2>
-                <div className="12u$(small)">
-                    <form method="post" action="#">
-                        <div className="row uniform 50%">
-                            <div className="6u 12u$(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
-                            <div className="6u 12u$(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
-                            <div className="12u"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-                        </div>
-                    </form>
-                    <ul className="actions">
-                        <li><input type="submit" value="Send Message" /></li>
-                    </ul>
-                </div>
+            <h2>Get In Touch</h2>
+                <EmailForm/>
             </section>
         </div>
     )
