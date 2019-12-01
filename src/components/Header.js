@@ -1,15 +1,13 @@
 import React from 'react'
 
 import Footer from './Footer'
-import avatar from '../assets/images/avatar2.jpg'
 
 class Header extends React.Component {
     render() {
         return (
             <header id="header">
                 <div className="inner">
-                    <a href="/" className="image avatar"><img src={avatar} alt="avatar"/></a>
-                    <h1><strong>Hello</strong>, I'm Cassidy<br />
+                  <h1>
                     Basic Utah photographer<br />
                     with some not so basic photos.</h1>
                 </div>
