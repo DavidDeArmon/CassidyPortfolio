@@ -40,7 +40,7 @@
 		)
 	));
 
-	$size-header-width: 35%;
+	$size-header-width: 30%;
 	$size-header-pad: 4em;
 
 /* Basic */
@@ -238,6 +238,7 @@
 			text-align: center;
 			h2 {
 				font-size: 4em;
+				margin:0;
 			}
 		}
 	}
@@ -560,8 +561,16 @@
 	.avatar-container{
 		display:flex;
 		flex-direction: row;
-		&.tagline{
-
+		justify-content: space-between;
+		align-items:center;
+		padding:5%;
+		#avatar{
+			margin:0;
+		}
+		.tagline{
+			white-space: nowrap;
+			height:50%;
+			margin:0;
 		}
 	}
 
