@@ -554,16 +554,14 @@
 			img {
 				border-radius: 100%;
 				width: 25%;
-				margin:auto;
 			}
 		}
 	}
 	.avatar-container{
 		display:flex;
-		flex-direction: row;
-		justify-content: space-between;
+		justify-content:flex-start;
 		align-items:center;
-		padding:5%;
+		margin: 5% 15% ;
 		#avatar{
 			margin:0;
 		}
