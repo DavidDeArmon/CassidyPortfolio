@@ -13,7 +13,7 @@ function Main(props) {
                     <h2>Cass Takes Photos</h2>
                 </header>
                 <div className ='avatar-container'>
-                 <a href="/" className="image avatar"><img  id = "avatar"src={avatar} alt="avatar"/></a>
+                 <a href="/" className="image avatar"><img src={avatar} alt="avatar"/></a>
                  <h2 className="tagline"><strong>Hello</strong>, I'm Cassidy </h2>
                 </div>
                 <ul className="actions">

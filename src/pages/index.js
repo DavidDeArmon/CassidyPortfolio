@@ -23,7 +23,7 @@ class HomeIndex extends React.Component {
         this.setState({ modalIsOpen: false });
     }
     render() {
-        const siteTitle = "Cassidy's Portolio"
+        const siteTitle = "Cass Takes Photos"
         const siteDescription = "Cassidy Smith's Portolio"
 
         return (

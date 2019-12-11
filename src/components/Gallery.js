@@ -5,42 +5,39 @@ import Carousel, { Modal, ModalGateway } from "react-images";
 class Gallery extends Component {
     constructor() {
         super();
-
         this.state = {
             lightboxIsOpen: false,
             selectedIndex: 0
         };
-
         this.toggleLightbox = this.toggleLightbox.bind(this);
     }
-    toggleLightbox(selectedIndex) {
+    toggleLightbox(id) {
         this.setState(state => ({
             lightboxIsOpen: !state.lightboxIsOpen,
-            selectedIndex
+            selectedIndex:id
         }));
     }
     renderGallery(images) {
         if (!images) return;
 
-        const gallery = images.map((obj, i) => {
+        const gallery = images.map((pic) => {
             return (
-                <article className="6u 12u$(xsmall) work-item" key={i}>
                     <a
-                        className="image fit thumb"
-                        href={obj.source}
+                        key={pic.id}
+                        className="image thumb"
+                        href={pic.source}
                         onClick={e => {
                             e.preventDefault();
-                            this.toggleLightbox(i);
+                            this.toggleLightbox(pic.id);
                         }}
                     >
-                        <img src={obj.thumbnail} alt={obj.caption} />
+                        <img src={pic.thumbnail} alt={pic.caption} />
                     </a>
-                </article>
             );
         });
 
         return (
-            <div className="row" >
+            <div className= "gallery">
                 {gallery}
             </div>
         );
@@ -50,7 +47,7 @@ class Gallery extends Component {
         const { selectedIndex, lightboxIsOpen } = this.state;
 
         return (
-            <div>
+            <div >
                 {this.renderGallery(images)}
                 <ModalGateway>
                     {lightboxIsOpen && (
