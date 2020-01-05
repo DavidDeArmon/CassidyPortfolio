@@ -51,7 +51,7 @@ class Gallery extends Component {
                 {this.renderGallery(images)}
                 <ModalGateway>
                     {lightboxIsOpen && (
-                        <Modal onClose={this.toggleLightbox}>
+                        <Modal onClose={this.toggleLightbox} ariaHideApp={false}>
                             <Carousel currentIndex={selectedIndex} views={images} />
                         </Modal>
                     )}

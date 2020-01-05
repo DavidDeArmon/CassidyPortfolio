@@ -7,7 +7,6 @@ import avatar from '../assets/images/avatar2.jpg'
 function Main(props) {
     return (
         <div id="main">
-
             <section id="one">
                 <header className="major">
                     <h2>Cass Takes Photos</h2>

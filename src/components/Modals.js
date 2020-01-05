@@ -31,6 +31,7 @@ class Modals extends React.Component {
           onRequestClose={this.props.closeModal}
           style={customStyles}
           contentLabel="Example Modal"
+          ariaHideApp={false}
         >
           {this.props.modal === 'about' && <About />}
           {this.props.modal === 'recentWork' && <RecentWork />}
