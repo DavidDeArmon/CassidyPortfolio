@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Main from '../components/Main'
-import Layout from '../components/Layout'
+import Template from '../components/Template'
 
 
 class HomeIndex extends React.Component {
@@ -9,13 +9,13 @@ class HomeIndex extends React.Component {
         const siteTitle = "Cass Takes Photos"
         const siteDescription = "Cassidy Smith's Portolio"
         return (
-            <Layout>
+            <Template>
                 <Helmet>
                     <title>{siteTitle}</title>
                     <meta name="description" content={siteDescription} />
                 </Helmet>
                 <Main />
-            </Layout>
+            </Template>
         )
     }
 }

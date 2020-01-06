@@ -3,7 +3,7 @@ import '../assets/scss/main.scss'
 
 import Header from './Header'
 
-class Layout extends React.Component {
+class Template extends React.Component {
     render() {
         const { children } = this.props
 
@@ -16,4 +16,4 @@ class Layout extends React.Component {
     }
 }
 
-export default Layout
+export default Template
