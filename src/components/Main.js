@@ -24,13 +24,13 @@ class Main extends React.Component {
         return (
             <div id="main">
                 <section id="one">
-                <Modals modalIsOpen={this.state.modalIsOpen} closeModal={this.closeModal} modal={this.state.modalToOpen} />
+                <Modals modalIsOpen={this.state.modalIsOpen} closeModal={this.closeModal} modal={this.state.modalToOpen} /> 
                     <header className="major">
                         <h2>Cass Takes Photos</h2>
                     </header>
                     <div className='avatar-container'>
-                        <a href="/" className="image avatar"><img src={avatar} alt="avatar" /></a>
-                        <h2 className="tagline"><strong>Hello</strong>, I'm Cassidy </h2>
+                        <img className="image avatar" src={avatar} alt="avatar" />
+                        <h2 className="tagline"><strong>Hello</strong>, I'm Cassidy... </h2>
                     </div>
                     <ul className="actions">
                         <li><button onClick={() => { this.openModal('about') }} className="button medium">Get To Know Me</button></li>

@@ -542,37 +542,32 @@
 				width: 100%;
 			}
 		}
-
-		
-		&.avatar {
-			border-radius: 100%;
-
-			&:before {
-				display: none;
-			}
-
-			img {
-				border-radius: 100%;
-				width: 25%;
-			}
-		}
 	}
 	.avatar-container{
 		display:flex;
 		justify-content:flex-start;
 		align-items:center;
 		margin: 5% 15% ;
-		#avatar{
+
+		.avatar{
+			align-self: flex-start;
 			margin:0;
-			img{
-			border-radius: _size(border-radius);
-			height: 2rem;
-			}
+			border-radius: 100%;
 		}
 		.tagline{
+			flex-grow: 1;
 			white-space: nowrap;
 			height:50%;
 			margin:0;
+			margin-left: 2rem;
+		}
+		&:before {
+			display: none;
+		}
+
+		img {
+			border-radius: 100%;
+			width: 25%;
 		}
 	}
 /* List */
@@ -742,6 +737,12 @@
 /* Table */
 
 	.table {
+		text-align: center;
+		
+		h2{
+			font-size: 300%;
+			margin:0;
+		}
 
 		.table-row {
 			display: flex;
@@ -914,11 +915,6 @@
 			font-size: 1.35em;
 			line-height: 1.75em;
 			margin: 0;
-		}
-
-		.image.avatar {
-			margin: 0 0 (_size(element-margin) * 0.5) 0;
-			width: 6.25em;
 		}
 	}
 
