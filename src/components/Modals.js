@@ -6,6 +6,7 @@ import Pricing from './modals/Pricing';
 
 const customStyles = {
   content: {
+    width:'70rem',
     maxWidth: '80vw',
     maxHeight: '90vh',
     top: '50%',
