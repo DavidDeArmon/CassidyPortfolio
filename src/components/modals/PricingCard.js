@@ -2,12 +2,12 @@ import React from 'react'
 
 function PricingCard(props) {
     return (
-        <div className="table-row">
-            <div className="table-column" >
+        <div className="pricing-row">
+            <div className="pricing-column" >
                 <img src={props.thumbnail} alt="thumbnail" />
-                <p>{props.title}</p>
             </div>
-            <div className="table-column details">
+            <div className="pricing-column details">
+                <p>{props.title}</p>
                 {props.price} for {props.title} <br />
                 {props.details}
             </div>

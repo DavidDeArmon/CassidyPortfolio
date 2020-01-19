@@ -14,7 +14,7 @@ const customStyles = {
     right: 'auto',
     bottom: 'auto',
     marginRight: '-50%',
-    transform: 'translate(-50%, -50%)'
+    transform: 'translate(-50%, -50%)',
   }
 };
 
@@ -26,19 +26,16 @@ class Modals extends React.Component {
   }
   render() {
     return (
-      <div className="modals">
         <Modal
           isOpen={this.props.modalIsOpen}
           onRequestClose={this.props.closeModal}
           style={customStyles}
-          contentLabel="Example Modal"
           ariaHideApp={false}
         >
           {this.props.modal === 'about' && <About />}
           {this.props.modal === 'recentWork' && <RecentWork />}
           {this.props.modal === 'pricing' && <Pricing />}
         </Modal>
-      </div>
     )
   }
 }

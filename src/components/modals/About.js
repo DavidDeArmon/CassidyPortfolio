@@ -2,7 +2,7 @@ import React from 'react'
 
 function About() {
     return (
-        <div id="box">
+        <div id="box" className='about'>
             <h2>About</h2>
             <p>Accumsan orci faucibus id eu lorem semper.<br />
                 Eu ac iaculis ac nunc nisi lorem vulputate lorem neque cubilia ac in adipiscing in curae lobortis<br />

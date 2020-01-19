@@ -1,45 +1,56 @@
 import React from 'react'
-import Gallery from '../Gallery'
-
+import GalleryCategories from './GalleryCategories';
 import thumb01 from '../../assets/images/thumbs/07.jpg'
 import thumb02 from '../../assets/images/thumbs/08.jpg'
 import thumb03 from '../../assets/images/thumbs/09.jpg'
 import thumb04 from '../../assets/images/thumbs/10.jpg'
-import thumb05 from '../../assets/images/thumbs/11.jpg'
-import thumb06 from '../../assets/images/thumbs/12.jpg'
 
-import full01 from '../../assets/images/fulls/07-full.jpg'
-import full02 from '../../assets/images/fulls/08-full.jpg'
-import full03 from '../../assets/images/fulls/09-full.jpg'
-import full04 from '../../assets/images/fulls/10-full.jpg'
-import full05 from '../../assets/images/fulls/11-full.jpg'
-import full06 from '../../assets/images/fulls/12-full.jpg'
-
-
-const DEFAULT_IMAGES = [
-    { id: '1', source: full01, thumbnail: thumb01, caption: 'Photo 1', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.' },
-    { id: '5', source: full05, thumbnail: thumb05, caption: 'Photo 5', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.' },
-    { id: '2', source: full02, thumbnail: thumb02, caption: 'Photo 2', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.' },
-    { id: '3', source: full03, thumbnail: thumb03, caption: 'Photo 3', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.' },
-    { id: '4', source: full04, thumbnail: thumb04, caption: 'Photo 4', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.' },
-    { id: '6', source: full06, thumbnail: thumb06, caption: 'Photo 6', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.' }
+const CATEGORIES = [
+    { id: '1', thumbnail: thumb01, title: 'Engagements / Couples' },
+    { id: '2', thumbnail: thumb02, title: 'Bridals' },
+    { id: '3', thumbnail: thumb03, title: 'Weddings' },
+    { id: '4', thumbnail: thumb04, title: 'Portraits' },
+    { id: '5', thumbnail: thumb01, title: 'Families' },
+    { id: '6', thumbnail: thumb02, title: 'Missionary' },
+    { id: '7', thumbnail: thumb03, title: 'Creative' },
+    { id: '8', thumbnail: thumb04, title: 'Headshots' },
 ];
 
-function RecentWork(){
-    return(
-        <div id="box" >
-        <h2>Recent Work</h2>
-
-        <Gallery images={DEFAULT_IMAGES.map(({ id, source, thumbnail, caption, description }) => ({
-            id,
-            source,
-            thumbnail,
-            caption,
-            description
-        }))} />
-
-    </div>
-
-    )
+class RecentWork extends React.Component {
+    constructor() {
+        super();
+        this.state = {
+            categoryIsOpen: false,
+            openCategory: 0
+        };
+    }
+    openCategory = (openCategory) => {
+        this.setState({ categoryIsOpen: true, openCategory });
+    }
+    closeCategory = () => {
+        this.setState({ categoryIsOpen: false });
+    }
+    render() {
+        let displayCategory
+        let openCategory = this.state.openCategory
+        if (openCategory === 0) {
+            displayCategory = <div className='gallery'>
+                <h2>Categories</h2>
+                {CATEGORIES.map((e) => (
+                    <div className='button' key = {e.id}>
+                        <img src={e.thumbnail} alt={e.title} />
+                            <p>{e.title}</p>
+                    </div>
+                ))}
+            </div>
+        } else {
+            displayCategory = <GalleryCategories openCategory={openCategory} />
+        }
+        return (
+            <div id="box" >
+                {displayCategory}
+            </div>
+        )
+    }
 }
 export default RecentWork
