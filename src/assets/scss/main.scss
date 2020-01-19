@@ -3,13 +3,14 @@
 @import 'libs/mixins';
 @import '../css/font-awesome.min.css';
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic");
-
-/*
-	Strata by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
+@font-face {
+	font-family: 'bromello';
+	src:  url('../fonts/bromello-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'gotham book';
+	src:  url('../fonts/gotham-Book-Regular.otf') format('opentype');
+}
 	@import "libs/skel";
 
 	@include skel-breakpoints((
@@ -58,7 +59,7 @@
 
 	body, input, select, textarea {
 		color: _palette(fg);
-		font-family: _font(family);
+		font-family: 'gotham book';
 		font-size: 16pt;
 		font-weight: _font(weight);
 		line-height: 1.75em;
@@ -236,9 +237,11 @@
 
 		&.major {
 			text-align: center;
+			font-family:'bromello', cursive, sans-serif;
 			h2 {
-				font-size: 4em;
+				font-size: 6em;
 				margin:0;
+
 			}
 		}
 	}
@@ -477,14 +480,21 @@
 		justify-content:flex-start;
 		align-items:center;
 		margin: 5% 15% ;
+		
 
 		.avatar{
 			align-self: flex-start;
 			margin:0;
 			border-radius: 100%;
+			box-shadow:
+						-1px 2.8px 2.2px rgba(0, 0, 0, 0.034),
+						-1px 6.7px 5.3px rgba(0, 0, 0, 0.048),
+						-1px 12.5px 10px rgba(0, 0, 0, 0.06),
+						-1px 22.3px 17.9px rgba(0, 0, 0, 0.072)
+						;
 		}
 		.tagline{
-			flex-grow: 1;
+			// flex-grow: 1;
 			white-space: nowrap;
 			height:50%;
 			margin:0;
@@ -551,6 +561,7 @@
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
+			padding-top: 1em;
 
 			li {
 				display: inline-block;
@@ -801,7 +812,7 @@
 		background-position:	top left,							top left;
 		background-repeat:		repeat,								no-repeat;
 		background-size:		auto,								auto 100%;
-		@media (min-aspect-ratio: 1782 /865) {
+		@media (min-aspect-ratio: 15 /7) {
 			background-size:		auto,								30vw auto;
 		  }
 		color: _palette(accent2, fg);

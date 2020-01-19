@@ -30,7 +30,7 @@ class Main extends React.Component {
                     </header>
                     <div className='avatar-container'>
                         <img className="image avatar" src={avatar} alt="avatar" />
-                        <h2 className="tagline"><strong>Hello</strong>, I'm Cassidy... </h2>
+                        <h2 className="tagline"><strong>Hi!</strong> I'm Cassidy, </h2>
                     </div>
                     <ul className="actions">
                         <li><button onClick={() => { this.openModal('recentWork') }} className="button medium main">Gallery</button></li>

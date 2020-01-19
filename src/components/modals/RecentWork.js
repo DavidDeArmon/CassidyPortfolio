@@ -37,10 +37,10 @@ class RecentWork extends React.Component {
             displayCategory = <div className='gallery'>
                 <h2>Categories</h2>
                 {CATEGORIES.map((e) => (
-                    <div className='button' key = {e.id}>
+                    <button className='button' key = {e.id} onClick={()=>this.openCategory(e.id)}>
                         <img src={e.thumbnail} alt={e.title} />
                             <p>{e.title}</p>
-                    </div>
+                    </button>
                 ))}
             </div>
         } else {

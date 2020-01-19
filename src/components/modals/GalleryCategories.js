@@ -27,7 +27,8 @@ const DEFAULT_IMAGES = [
 
 function GalleryCategories(props){
     let gallery = []
-    if (props.openCategory = 0 ){ gallery = DEFAULT_IMAGES }
+    // if (props.openCategory = 0 ){ gallery = DEFAULT_IMAGES }
+    gallery = DEFAULT_IMAGES
     return(
         <Gallery images={gallery.map(({ id, source, thumbnail, caption, description }) => ({
             id,
