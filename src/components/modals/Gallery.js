@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import Carousel, { Modal, ModalGateway } from "react-images";
 
@@ -60,10 +59,5 @@ class Gallery extends Component {
         );
     }
 }
-
-Gallery.displayName = 'Gallery';
-Gallery.propTypes = {
-    images: PropTypes.array
-};
 
 export default Gallery;
