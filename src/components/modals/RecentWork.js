@@ -1,19 +1,20 @@
 import React from 'react'
 import GalleryCategories from './GalleryCategories';
-import thumb01 from '../../assets/images/thumbs/07.jpg'
-import thumb02 from '../../assets/images/thumbs/08.jpg'
-import thumb03 from '../../assets/images/thumbs/09.jpg'
-import thumb04 from '../../assets/images/thumbs/10.jpg'
-
+import creative from '../../assets/images/fulls/creative.jpg'
+import missionary from '../../assets/images/fulls/missionary.jpg'
+import familesOne from '../../assets/images/fulls/familesOne.jpg'
+import portraits from '../../assets/images/fulls/portraits.jpg'
+import engagements from '../../assets/images/fulls/engagements.jpg'
+import firstLook from '../../assets/images/fulls/firstLook.jpg'
+import fullWeddingCoverage from '../../assets/images/fulls/fullWeddingCoverage.jpg'
 const CATEGORIES = [
-    { id: '1', thumbnail: thumb01, title: 'Engagements' },
-    { id: '2', thumbnail: thumb02, title: 'Bridals' },
-    { id: '3', thumbnail: thumb03, title: 'Weddings' },
-    { id: '4', thumbnail: thumb04, title: 'Portraits' },
-    { id: '5', thumbnail: thumb01, title: 'Families' },
-    { id: '6', thumbnail: thumb02, title: 'Missionary' },
-    { id: '7', thumbnail: thumb03, title: 'Creative' },
-    { id: '8', thumbnail: thumb04, title: 'Headshots' },
+    { id: '1', thumbnail: engagements, title: 'Engagements' },
+    { id: '2', thumbnail: firstLook, title: 'Bridals' },
+    { id: '3', thumbnail: fullWeddingCoverage, title: 'Weddings' },
+    { id: '4', thumbnail: portraits, title: 'Portraits' },
+    { id: '5', thumbnail: familesOne, title: 'Families' },
+    { id: '6', thumbnail: missionary, title: 'Missionary' },
+    { id: '7', thumbnail: creative, title: 'Creative' },
 ];
 
 class RecentWork extends React.Component {
