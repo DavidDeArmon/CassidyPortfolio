@@ -6,7 +6,7 @@ import thumb03 from '../../assets/images/thumbs/09.jpg'
 import thumb04 from '../../assets/images/thumbs/10.jpg'
 
 const CATEGORIES = [
-    { id: '1', thumbnail: thumb01, title: 'Engagements / Couples' },
+    { id: '1', thumbnail: thumb01, title: 'Engagements' },
     { id: '2', thumbnail: thumb02, title: 'Bridals' },
     { id: '3', thumbnail: thumb03, title: 'Weddings' },
     { id: '4', thumbnail: thumb04, title: 'Portraits' },

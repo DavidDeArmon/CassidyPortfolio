@@ -255,8 +255,9 @@
 		h2{
 			width:100%;
 			text-align:center;
-			font-size: 300%;
+			font-size: 400%;
 			margin:0;
+			font-family: bromello;
 		}
 		.button{
 			margin:1rem;
@@ -344,6 +345,7 @@
 		opacity: 1.0;
 	}
 
+
 /* Box */
 
 	.box {
@@ -381,11 +383,21 @@
 
 /* About */
 	.about{
+		img{
+			max-width: 25%;
+			box-shadow:
+						-1px 2.8px 2.2px rgba(0, 0, 0, 0.034),
+						-1px 6.7px 5.3px rgba(0, 0, 0, 0.048),
+						-1px 12.5px 10px rgba(0, 0, 0, 0.06),
+						-1px 22.3px 17.9px rgba(0, 0, 0, 0.072)
+						;
+		}
 		h2{
 			width:100%;
 			text-align:center;
-			font-size: 300%;
+			font-size: 400%;
 			margin:0;
+			font-family: bromello;
 		}
 	}
 /* Image */
@@ -495,7 +507,7 @@
 		}
 		.tagline{
 			// flex-grow: 1;
-			white-space: nowrap;
+			// white-space: nowrap;
 			height:50%;
 			margin:0;
 			margin-left: 2rem;
@@ -671,8 +683,9 @@
 		text-align: center;
 		
 		h2{
-			font-size: 300%;
+			font-size: 400%;
 			margin:0;
+			font-family: bromello;
 		}
 
 		.pricing-row {
@@ -694,8 +707,7 @@
 				text-align: center;
 				img {
 					display: block;
-					height:13rem;
-					max-height: 15vh;
+					height:15rem;
 					padding:0;
 												
 				}
