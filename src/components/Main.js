@@ -10,6 +10,9 @@ class Main extends React.Component {
     // 1:add correct images to Gallery
     // 2:optimize image sizes
     // 3:mobile responsiveness
+    // 4.make background change photo
+    //IDEAS
+    //make insta/youtube more prominent
     constructor(props) {
         super(props);
         this.state = {
