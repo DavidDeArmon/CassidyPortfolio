@@ -6,6 +6,10 @@ import Modals from '../components/Modals'
 
 
 class Main extends React.Component {
+    // TODO
+    // 1:add correct images to Gallery
+    // 2:optimize image sizes
+    // 3:mobile responsiveness
     constructor(props) {
         super(props);
         this.state = {

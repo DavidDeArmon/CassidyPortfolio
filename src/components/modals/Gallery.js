@@ -13,7 +13,7 @@ class Gallery extends Component {
     toggleLightbox(id) {
         this.setState(state => ({
             lightboxIsOpen: !state.lightboxIsOpen,
-            selectedIndex:id
+            selectedIndex: id
         }));
     }
     renderGallery(images) {
@@ -21,26 +21,28 @@ class Gallery extends Component {
 
         const gallery = images.map((pic) => {
             return (
-                    <a
-                        key={pic.id}
-                        className="image thumb"
-                        href={pic.source}
-                        onClick={e => {
-                            e.preventDefault();
-                            this.toggleLightbox(pic.id);
-                        }}
-                    >
-                        <img src={pic.thumbnail} alt={pic.caption} />
-                    </a>
+                <a
+                    key={pic.id}
+                    className="image thumb"
+                    id="noFlex"
+                    href={pic.source}
+                    onClick={e => {
+                        e.preventDefault();
+                        this.toggleLightbox(pic.id);
+                    }}
+                >
+                    <img src={pic.thumbnail} alt={pic.caption} />
+                </a>
             );
         });
 
         return (
-            <div className= "gallery">
+            <div className="gallery">
                 {gallery}
             </div>
         );
     }
+
     render() {
         const { images } = this.props;
         const { selectedIndex, lightboxIsOpen } = this.state;
