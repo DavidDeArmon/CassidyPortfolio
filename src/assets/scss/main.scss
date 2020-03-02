@@ -382,7 +382,17 @@
 
 /* About */
 	.about{
+		.left{
+			float: left;
+		}
+		.right{
+			float: right;
+		}
+		p{
+			font-size:  125%;
+		}
 		img{
+			margin:0 1em 0 1em;
 			max-width: 25%;
 			box-shadow:
 						-1px 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -398,6 +408,9 @@
 			margin:0;
 			font-family: bromello;
 		}
+		article {
+			margin:2em;
+		  }
 	}
 /* Image */
 
