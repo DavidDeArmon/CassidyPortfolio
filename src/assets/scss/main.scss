@@ -6,10 +6,12 @@
 @font-face {
 	font-family: 'bromello';
 	src:  url('../fonts/bromello-Regular.ttf') format('truetype');
+	font-display: swap;
 }
 @font-face {
 	font-family: 'gotham book';
 	src:  url('../fonts/gotham-Book-Regular.otf') format('opentype');
+	font-display: swap;
 }
 	@import "libs/skel";
 

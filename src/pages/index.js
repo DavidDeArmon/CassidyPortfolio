@@ -11,8 +11,9 @@ class HomeIndex extends React.Component {
         return (
             <Template>
                 <Helmet>
+                    <html lang="en"></html>
                     <title>{siteTitle}</title>
-                    <meta name="description" content={siteDescription} />
+                    <meta name="description" content={siteDescription}/>
                 </Helmet>
                 <Main />
             </Template>

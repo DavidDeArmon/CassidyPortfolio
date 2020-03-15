@@ -1,12 +1,12 @@
 import React from 'react'
 import GalleryCategories from './GalleryCategories';
-import creative from '../../assets/images/fulls/creative.jpg'
-import missionary from '../../assets/images/fulls/missionary.jpg'
-import familesOne from '../../assets/images/fulls/familesOne.jpg'
-import portraits from '../../assets/images/fulls/portraits.jpg'
-import engagements from '../../assets/images/fulls/engagements.jpg'
-import firstLook from '../../assets/images/fulls/firstLook.jpg'
-import fullWeddingCoverage from '../../assets/images/fulls/fullWeddingCoverage.jpg'
+import creative from '../../assets/images/thumbs/creative.jpg'
+import missionary from '../../assets/images/thumbs/missionary.jpg'
+import familesOne from '../../assets/images/thumbs/familesOne.jpg'
+import portraits from '../../assets/images/thumbs/portraits.jpg'
+import engagements from '../../assets/images/thumbs/engagements.jpg'
+import firstLook from '../../assets/images/thumbs/firstLook.jpg'
+import fullWeddingCoverage from '../../assets/images/thumbs/fullWeddingCoverage.jpg'
 const CATEGORIES = [
     { id: '1', thumbnail: engagements, title: 'Engagements' },
     { id: '2', thumbnail: firstLook, title: 'Bridals' },
