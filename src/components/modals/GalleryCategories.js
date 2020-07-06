@@ -30,7 +30,7 @@ const DEFAULT_IMAGES = [
     { id: '12', source: full06, thumbnail: thumb06, caption: 'Photo 6', description: 'Lorem ipsum dolor sit amet nisl sed nullam feugiat.' }
 ];
 
-
+//USED IN components/modals/RecentWork.js
 function GalleryCategories(props) {
     let gallery = []
     // if (props.openCategory = 0 ){ gallery = DEFAULT_IMAGES }

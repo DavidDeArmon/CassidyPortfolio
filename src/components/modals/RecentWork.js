@@ -48,7 +48,7 @@ class RecentWork extends React.Component {
             displayCategory = <GalleryCategories openCategory={openCategory} />
         }
         return (
-            <div id="box" >
+            <div id="categoryBox" >
                 {displayCategory}
             </div>
         )

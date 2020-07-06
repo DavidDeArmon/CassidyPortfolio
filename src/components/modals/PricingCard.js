@@ -7,9 +7,9 @@ function PricingCard(props) {
                 <img src={props.thumbnail} alt="thumbnail" />
             </div>
             <div className="pricing-column details">
-                <p>{props.title}</p>
-                {props.price} <br />
-                {props.details}
+                <h3>{props.title}</h3>
+                <p>{props.price} <br/> 
+                {props.details}</p>
             </div>
         </div>
     )
