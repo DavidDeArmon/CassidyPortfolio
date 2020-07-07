@@ -879,7 +879,7 @@
 		@include vendor('display', 'flex');
 		@include vendor('flex-direction', 'column');
 		@include vendor('align-items', 'flex-end');
-		@include vendor('justify-content', 'space-between');
+		@include vendor('justify-content', 'space-around');
 		background-color:		_palette(accent2, bg);
 		background-attachment:	scroll,								fixed;
 		background-image:		url('images/overlay.png'),			url('../images/bg.jpg');
@@ -902,8 +902,8 @@
 			width: 100%;
 		}
 		> .inner {
-			@include vendor('flex-grow', '1');
-			margin: 0 0 ($size-header-pad * 0.5) 0;
+			margin: 0 ($size-header-pad * 0.5) ($size-header-pad * 0.5) 0;
+			padding:0
 		}
 		strong, b {
 			color: _palette(accent2, fg-bold);
@@ -921,7 +921,7 @@
 /* Footer */
 	#footer {
 		.icons {
-			margin: (_size(element-margin) * 0.5) 0 0 0;
+			margin: (_size(element-margin) * 0.5) ($size-header-pad * 0.5) 0 0;
 
 			a {
 				color: _palette(accent2, fg-light);
@@ -1098,7 +1098,7 @@
 				background-position:	top left,	center center;
 				background-size:		auto,		cover;
 				left: auto;
-				padding: ($size-header-pad * 1.5) $size-header-pad 0 $size-header-pad;
+				padding: ($size-header-pad * 1.5) $size-header-pad $size-header-pad $size-header-pad;
 				position: relative;
 				text-align: center;
 				top: auto;
@@ -1119,7 +1119,7 @@
 			#footer {
 				bottom: auto;
 				left: auto;
-				padding: $size-header-pad $size-header-pad $size-header-pad $size-header-pad;
+				padding: $size-header-pad $size-header-pad;
 				position: relative;
 				text-align: center;
 				width: 100%;
