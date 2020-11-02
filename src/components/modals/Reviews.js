@@ -21,7 +21,7 @@ function Reviews() {
                 <p> Whenever we need an anniversary, pregnancy, or a birthday captured, Cassidy is our first choice! She always poses us in a natural and flattering way that allows our personalities to show. They are always freaking top quality!! She always gives us everything we ask for, even if our ideas are bad, she tries to make it work! She is the perfect balance between professional and personable! I highly recommend Cassidy!
                 <br/>- Kellie</p>
 
-                <p>  Cassidy is a true professional and a joy to work with. She had us laughing the whole time and isn’t afraid to climb through several feet of snow to get the perfect shot. We couldn’t have asked for a better experience and are thrilled with the images she sent us. 💕
+                <p>  Cassidy is a true professional and a joy to work with. She had us laughing the whole time and isn’t afraid to climb through several feet of snow to get the perfect shot. We couldn’t have asked for a better experience and are thrilled with the images she sent us. <span role="img" aria-label= "hearts">💕</span>
                 <br/>- Rebekah</p>
 
                 <p>   Cassidy did a phenomenal job on my wedding pictures! She was so accommodating and was able to get me in last second, even during corona! Her photos captured my day/ceremony so well and she caught moments I will cherish forever! Her prices are very fair and she is so nice to work with!
