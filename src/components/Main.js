@@ -8,9 +8,7 @@ import Modals from '../components/Modals'
 class Main extends React.Component {
     // TODO
     // 1:add correct images to Gallery
-    // 2:optimize image sizes
-    // 3:mobile responsiveness
-    // 4.make background change photo
+    // 2.make background change photo
     //IDEAS
     //make insta/youtube more prominent
     constructor(props) {
@@ -43,6 +41,7 @@ class Main extends React.Component {
                         <li><button onClick={() => { this.openModal('recentWork') }} className="button medium main">Gallery</button></li>
                         <li><button onClick={() => { this.openModal('pricing') }} className="button medium main">Pricing</button></li>
                         <li><button onClick={() => { this.openModal('about') }} className="button medium main">Get To Know Me</button></li>
+                        <li><button onClick={() => { this.openModal('reviews') }} className="button medium main">Reviews</button></li>
                     </ul>
                 </section>
                 <section id="two">

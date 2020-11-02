@@ -449,7 +449,7 @@
 			h3{
 				letter-spacing: -1px; 
 				margin:0;
-				padding:0 .5vw 0 0;
+				padding:0 .5vw 0 0	;
 				font-weight:bold;
 			}
 			p {
@@ -464,6 +464,40 @@
 }
 /* About */
 .about{
+	.leftImage{
+		float: left;
+	}
+	.rightImage{
+		float: right;
+	}
+	p{
+		font-size:  125%;
+	}
+	img{
+		margin:0 1em 0 1em;
+		max-width: 25%;
+		box-shadow:
+					-1px 2.8px 2.2px rgba(0, 0, 0, 0.034),
+					-1px 6.7px 5.3px rgba(0, 0, 0, 0.048),
+					-1px 12.5px 10px rgba(0, 0, 0, 0.06),
+					-1px 22.3px 17.9px rgba(0, 0, 0, 0.072)
+					;
+	@media (max-width:600px) {
+		width: 100vw;
+		max-width: 95%;
+		margin:1em 1em 1em 1em;
+		}
+	}
+	h2{
+		width:100%;
+		text-align:center;
+		font-size: 400%;
+		margin:0;
+		font-family: bromello;
+	}
+}
+/* Reviews */
+.reviews{
 	.leftImage{
 		float: left;
 	}

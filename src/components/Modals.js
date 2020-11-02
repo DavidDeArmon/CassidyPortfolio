@@ -3,6 +3,7 @@ import Modal from 'react-modal';
 import RecentWork from './modals/RecentWork';
 import About from './modals/About';
 import Pricing from './modals/Pricing';
+import Reviews from './modals/Reviews';
 
 const customStyles = {
   content: {
@@ -35,6 +36,7 @@ class Modals extends React.Component {
           {this.props.modal === 'about' && <About />}
           {this.props.modal === 'recentWork' && <RecentWork />}
           {this.props.modal === 'pricing' && <Pricing />}
+          {this.props.modal === 'reviews' && <Reviews />}
         </Modal>
     )
   }
