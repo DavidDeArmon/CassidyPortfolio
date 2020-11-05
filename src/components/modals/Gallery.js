@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import ImageViewer from 'react-simple-image-viewer';
+// import ImageViewer from 'react-simple-image-viewer';
+import Carousel, { Modal, ModalGateway } from "react-images";
+
 class GalleryUtil extends Component {
     constructor() {
         super();
@@ -45,15 +47,29 @@ class GalleryUtil extends Component {
     render() {
         const { images } = this.props;
         const { selectedIndex, viewerIsOpen } = this.state;
-        const imgurl = images.map((e)=>{return e.source})
+        const imgurl = images.map((e) => { return e.source })
         return (
-            <div >
+            <div>
                 {this.renderGallery(images)}
-                {viewerIsOpen && (
-                    <div className="imageViewer" >< ImageViewer src={imgurl} currentIndex={selectedIndex-1} onClose={this.toggleViewer} /></div>
-                    )}
+                <ModalGateway>
+                    {viewerIsOpen ? (
+                        <Modal onClose={this.toggleViewer}>
+                            <Carousel
+                                currentIndex={selectedIndex}
+                                views={images.map(x => ({
+                                    ...x,
+                                    srcset: x.srcSet,
+                                    caption: x.title
+                                }))}
+                            />
+                        </Modal>
+                    ) : null}
+                </ModalGateway>
+                {/* {viewerIsOpen && (
+                    <div className="imageViewer" >< ImageViewer src={imgurl} currentIndex={selectedIndex - 1} onClose={this.toggleViewer} /></div>
+                )} */}
             </div>
-            
+
         )
     }
 }
