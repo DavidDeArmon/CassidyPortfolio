@@ -1,18 +1,17 @@
 import React, { Component } from 'react';
-import Carousel, { Modal, ModalGateway } from "react-images";
-
+import ImageViewer from 'react-simple-image-viewer';
 class GalleryUtil extends Component {
     constructor() {
         super();
         this.state = {
-            lightboxIsOpen: false,
+            viewerIsOpen: false,
             selectedIndex: 0
         };
-        this.toggleLightbox = this.toggleLightbox.bind(this);
+        this.toggleViewer = this.toggleViewer.bind(this);
     }
-    toggleLightbox(id) {
+    toggleViewer(id) {
         this.setState(state => ({
-            lightboxIsOpen: !state.lightboxIsOpen,
+            viewerIsOpen: !state.viewerIsOpen,
             selectedIndex: id
         }));
     }
@@ -28,7 +27,7 @@ class GalleryUtil extends Component {
                     href={pic.source}
                     onClick={e => {
                         e.preventDefault();
-                        this.toggleLightbox(pic.id);
+                        this.toggleViewer(pic.id);
                     }}
                 >
                     <img src={pic.thumbnail} alt={pic.caption} />
@@ -45,20 +44,17 @@ class GalleryUtil extends Component {
 
     render() {
         const { images } = this.props;
-        const { selectedIndex, lightboxIsOpen } = this.state;
-
+        const { selectedIndex, viewerIsOpen } = this.state;
+        const imgurl = images.map((e)=>{return e.source})
         return (
             <div >
                 {this.renderGallery(images)}
-                <ModalGateway>
-                    {lightboxIsOpen && (
-                        <Modal onClose={this.toggleLightbox} ariaHideApp={false}>
-                            <Carousel currentIndex={selectedIndex} views={images} />
-                        </Modal>
+                {viewerIsOpen && (
+                    <div className="imageViewer" >< ImageViewer src={imgurl} currentIndex={selectedIndex-1} onClose={this.toggleViewer} /></div>
                     )}
-                </ModalGateway>
             </div>
-        );
+            
+        )
     }
 }
 

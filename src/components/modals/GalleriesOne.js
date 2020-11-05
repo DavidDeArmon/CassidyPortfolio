@@ -1,18 +1,21 @@
 import React from 'react'
 import GalleriesTwo from './GalleriesTwo';
-import creative from '../../assets/images/thumbs/creative.jpg'
-import familesOne from '../../assets/images/thumbs/familesOne.jpg'
-import portraits from '../../assets/images/thumbs/portraits.jpg'
-import engagements from '../../assets/images/thumbs/engagements.jpg'
-import firstLook from '../../assets/images/thumbs/firstLook.jpg'
-import fullWeddingCoverage from '../../assets/images/thumbs/fullWeddingCoverage.jpg'
+
+import engage1 from '../../assets/images/engagements/emmaChris (11).jpg'
+import bridal1 from '../../assets/images/bridals/dannyMelissa (1).jpg'
+import wedding1 from '../../assets/images/weddings/kamKatie (7).jpg'
+import portrait1 from '../../assets/images/portraits/alyssa (1).jpg'
+import family1 from '../../assets/images/families/gallardoFamily (9).jpg'
+import maternity1 from '../../assets/images/maternity/abbyBen (2).jpg'
+
+
 const CATEGORIES = [
-    { id: '1', thumbnail: engagements, title: 'Engagements' },
-    { id: '2', thumbnail: firstLook, title: 'Bridals' },
-    { id: '3', thumbnail: fullWeddingCoverage, title: 'Weddings' },
-    { id: '4', thumbnail: portraits, title: 'Portraits' },
-    { id: '5', thumbnail: familesOne, title: 'Families' },
-    { id: '6', thumbnail: creative, title: 'Maternity' },
+    { id: 1, thumbnail: engage1, title: 'Engagements' },
+    { id: 2, thumbnail: bridal1, title: 'Bridals' },
+    { id: 3, thumbnail: wedding1, title: 'Weddings' },
+    { id: 4, thumbnail: portrait1, title: 'Portraits' },
+    { id: 5, thumbnail: family1, title: 'Families' },
+    { id: 6, thumbnail: maternity1, title: 'Maternity' },
 ];
 
 class GalleriesOne extends React.Component {
