@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import ImageViewer from 'react-simple-image-viewer';
 import Carousel, { Modal, ModalGateway } from "react-images";
 
 class GalleryUtil extends Component {
@@ -65,9 +64,6 @@ class GalleryUtil extends Component {
                         </Modal>
                     ) : null}
                 </ModalGateway>
-                {/* {viewerIsOpen && (
-                    <div className="imageViewer" >< ImageViewer src={imgurl} currentIndex={selectedIndex - 1} onClose={this.toggleViewer} /></div>
-                )} */}
             </div>
 
         )

@@ -22,7 +22,6 @@
     "react-load-script": "0.0.6",
     "react-modal": "^3.11.2",
     "react-responsive-carousel": "^3.2.10",
-    "react-simple-image-viewer": "0.0.7",
     "sharp": "^0.23.4",
     "typescript": "^3.9.7"
   },
