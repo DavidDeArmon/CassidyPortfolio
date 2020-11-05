@@ -19,7 +19,7 @@ function Pricing() {
         { id: 5, thumbnail: sealing, title: "Sealing Only", price: "$350", details: "Exit, Family Photos, Bridals at Temple" },
         { id: 6, thumbnail: ceremony, title: "Ceremony", price: "$500", details: "Ceremony, Family Photos, Bridals at Location" },
         { id: 7, thumbnail: fullWeddingCoverage, title: "Wedding Day Coverage", price: "$950", details: "$100/Hr After 4 Hours" },
-        { id: 8, thumbnail: fullWeddingPackage, title: "Full Wedding Package", price: "$1100", details: "Engagements, Bridals, Wedding Day Coverage" },
+        { id: 8, thumbnail: fullWeddingPackage, title: "Full Wedding Package", price: "$1200", details: "Engagements, Bridals, Wedding Day Coverage" },
     ]
 
     let displayModel = pricingModel.map((e) => <PricingCard key={e.id} thumbnail={e.thumbnail} title={e.title} price={e.price} photos={e.photos} details={e.details} />);

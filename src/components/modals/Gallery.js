@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Carousel, { Modal, ModalGateway } from "react-images";
 
-class Gallery extends Component {
+class GalleryUtil extends Component {
     constructor() {
         super();
         this.state = {
@@ -62,4 +62,4 @@ class Gallery extends Component {
     }
 }
 
-export default Gallery;
+export default GalleryUtil;

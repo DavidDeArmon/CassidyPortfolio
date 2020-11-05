@@ -8,8 +8,8 @@ function PricingCard(props) {
             </div>
             <div className="pricing-column details">
                 <h3>{props.title}</h3>
-                <p>{props.price} <br/> 
-                {props.details}</p>
+                <p>{props.price} </p>
+                <p>{props.details}</p>
             </div>
         </div>
     )

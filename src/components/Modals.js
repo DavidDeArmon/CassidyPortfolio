@@ -1,6 +1,6 @@
 import React from 'react'
 import Modal from 'react-modal';
-import RecentWork from './modals/RecentWork';
+import GalleriesOne from './modals/GalleriesOne';
 import About from './modals/About';
 import Pricing from './modals/Pricing';
 import Reviews from './modals/Reviews';
@@ -34,7 +34,7 @@ class Modals extends React.Component {
           ariaHideApp={false}
         >
           {this.props.modal === 'about' && <About />}
-          {this.props.modal === 'recentWork' && <RecentWork />}
+          {this.props.modal === 'gallery' && <GalleriesOne />}
           {this.props.modal === 'pricing' && <Pricing />}
           {this.props.modal === 'reviews' && <Reviews />}
         </Modal>
