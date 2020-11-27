@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Carousel, { Modal, ModalGateway } from "react-images";
+// import Img from "gatsby-image";
 
 class GalleryUtil extends Component {
     constructor() {
@@ -31,6 +32,7 @@ class GalleryUtil extends Component {
                         this.toggleViewer(pic.id);
                     }}
                 >
+                    {/* <Img fixed={pic.thumbnail}/> */}
                     <img src={pic.thumbnail} alt={pic.caption} />
                 </a>
             );
@@ -46,7 +48,6 @@ class GalleryUtil extends Component {
     render() {
         const { images } = this.props;
         const { selectedIndex, viewerIsOpen } = this.state;
-        const imgurl = images.map((e) => { return e.source })
         return (
             <div>
                 {this.renderGallery(images)}
