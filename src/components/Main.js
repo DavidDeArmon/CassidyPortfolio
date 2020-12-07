@@ -4,7 +4,9 @@ import avatar from '../assets/images/avatar2.jpg'
 import mainLogo from'../assets/images/website-icon.png'
 import Modals from '../components/Modals';
 
-import engage1 from '../assets/images/engagements/emmaChris (11).jpg';
+import maternity31 from '../assets/images/maternity/dannyPeyton (5).jpg';
+import bridal42 from '../assets/images/bridals/treyKyndell (21).jpg';
+import wedding88 from '../assets/images/weddings/kysonAshlee (32).jpg'
 
 class Main extends React.Component {
     // TODO
@@ -44,9 +46,9 @@ class Main extends React.Component {
                     </ul>
                 </section>
                 <section id="one">
-                    <img className="image mainimages" src={engage1} alt='camera'/>
-                    <img className="image mainimages" src={engage1} alt='camera'/>
-                    <img className="image mainimages" src={engage1} alt='camera'/>
+                    <img className="image mainimages" src={maternity31} alt='camera'/>
+                    <img className="image mainimages" src={bridal42} alt='camera'/>
+                    <img className="image mainimages" src={wedding88} alt='camera'/>
                 </section>
                 <section id="two">
                     <h2>Get In Touch</h2>

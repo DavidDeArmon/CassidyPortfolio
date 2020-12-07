@@ -641,8 +641,7 @@
 		}
 	}
 	.avatar-container{
-		display:flex;
-		justify-content:flex-start;
+		justify-content:center;
 		align-items:center;
 		margin:3vw;
 		
@@ -672,7 +671,7 @@
 		}
 
 		img {
-			width: 50%;
+			width: 90%;
 		}
 	}
 /* List */
