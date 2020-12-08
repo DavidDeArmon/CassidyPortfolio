@@ -6,8 +6,8 @@ import engagements from '../../assets/images/thumbs/engagements.webp'
 import firstLook from '../../assets/images/thumbs/firstlook.webp'
 import sealing from '../../assets/images/thumbs/sealing.webp'
 import ceremony from '../../assets/images/thumbs/ceremony.webp'
-import fullWeddingCoverage from '../../assets/images/thumbs/fullWeddingCoverage.webp'
-import fullWeddingPackage from '../../assets/images/thumbs/fullWeddingPackage.webp'
+import fullWeddingCoverage from '../../assets/images/thumbs/fullweddingcoverage.webp'
+import fullWeddingPackage from '../../assets/images/thumbs/fullweddingpackage.webp'
 function Pricing() {
   
     const pricingModel = [
