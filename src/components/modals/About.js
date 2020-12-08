@@ -1,6 +1,6 @@
 import React from 'react'
-import aboutOne from '../../assets/images/thumbs/aboutOne.jpg'
-import aboutTwo from '../../assets/images/thumbs/aboutTwo.jpg'
+import aboutOne from '../../assets/images/thumbs/aboutOne.webp'
+import aboutTwo from '../../assets/images/thumbs/aboutTwo.webp'
 
 function About() {
     return (

@@ -1,12 +1,12 @@
 import React from 'react'
 import EmailForm from './Emailform'
-import avatar from '../assets/images/avatar2.jpg'
-import mainLogo from'../assets/images/website-icon.png'
+import avatar from '../assets/images/avatar2.webp'
+import mainLogo from'../assets/images/website-icon.webp'
 import Modals from '../components/Modals';
 
-import maternity31 from '../assets/images/maternity/dannyPeyton (5).jpg';
-import bridal42 from '../assets/images/bridals/treyKyndell (21).jpg';
-import wedding88 from '../assets/images/weddings/kysonAshlee (32).jpg'
+import maternity31 from '../assets/images/maternity/dannyPeyton (5).webp';
+import bridal42 from '../assets/images/bridals/treyKyndell (21).webp';
+import wedding88 from '../assets/images/weddings/kysonAshlee (32).webp'
 
 class Main extends React.Component {
     // TODO

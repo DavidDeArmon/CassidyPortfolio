@@ -1,12 +1,12 @@
 import React from 'react'
 import GalleriesTwo from './GalleriesTwo';
 
-import engage1 from '../../assets/images/engagements/emmaChris (11).jpg'
-import bridal1 from '../../assets/images/bridals/dannyMelissa (1).jpg'
-import wedding1 from '../../assets/images/weddings/kamKatie (7).jpg'
-import portrait1 from '../../assets/images/portraits/alyssa (1).jpg'
-import family1 from '../../assets/images/families/gallardoFamily (9).jpg'
-import maternity1 from '../../assets/images/maternity/abbyBen (2).jpg'
+import engage1 from '../../assets/images/engagements/emmaChris (11).webp'
+import bridal1 from '../../assets/images/bridals/dannyMelissa (1).webp'
+import wedding1 from '../../assets/images/weddings/kamKatie (7).webp'
+import portrait1 from '../../assets/images/portraits/alyssa (1).webp'
+import family1 from '../../assets/images/families/gallardoFamily (9).webp'
+import maternity1 from '../../assets/images/maternity/abbyBen (2).webp'
 
 
 const CATEGORIES = [

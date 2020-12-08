@@ -1,13 +1,13 @@
 import React from 'react'
 import PricingCard from './PricingCard'
-import creative from '../../assets/images/thumbs/creative.jpg'
-import familesOne from '../../assets/images/thumbs/familesOne.jpg'
-import engagements from '../../assets/images/thumbs/engagements.jpg'
-import firstLook from '../../assets/images/fulls/FIRSTLOOKKatieBryce.jpg'
-import sealing from '../../assets/images/thumbs/sealing.jpg'
-import ceremony from '../../assets/images/thumbs/ceremony.jpg'
-import fullWeddingCoverage from '../../assets/images/thumbs/fullWeddingCoverage.jpg'
-import fullWeddingPackage from '../../assets/images/thumbs/fullWeddingPackage.jpg'
+import creative from '../../assets/images/thumbs/creative.webp'
+import familesOne from '../../assets/images/thumbs/familesOne.webp'
+import engagements from '../../assets/images/thumbs/engagements.webp'
+import firstLook from '../../assets/images/thumbs/firstlook.webp'
+import sealing from '../../assets/images/thumbs/sealing.webp'
+import ceremony from '../../assets/images/thumbs/ceremony.webp'
+import fullWeddingCoverage from '../../assets/images/thumbs/fullWeddingCoverage.webp'
+import fullWeddingPackage from '../../assets/images/thumbs/fullWeddingPackage.webp'
 function Pricing() {
   
     const pricingModel = [
