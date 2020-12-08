@@ -39,7 +39,7 @@ class Header extends React.Component {
     render() {
 
         return (
-            <header id="back_ground" style={{ backgroundImage: "url('images/overlay.png'), url(" + this.state.backgroundImages[this.state.currentIMG] + ")"}}>
+            <header id="back_ground" style={{ backgroundImage: "url(" + this.state.backgroundImages[this.state.currentIMG] + ")"}}>
             {/* /<header id="back_ground" > */}
                 <Footer />
             </header>
