@@ -55,7 +55,7 @@ class GalleryUtil extends Component {
                     {viewerIsOpen ? (
                         <Modal onClose={this.toggleViewer}>
                             <Carousel
-                                currentIndex={selectedIndex}
+                                currentIndex={selectedIndex - 1}
                                 views={images.map(x => ({
                                     ...x,
                                     srcset: x.srcSet,
