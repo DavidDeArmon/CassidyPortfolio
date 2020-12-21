@@ -339,7 +339,7 @@
 	justify-content: space-evenly;
 	.image{
 		flex-basis: 20%;
-		width: 100%;
+		max-width: 90%;
 		margin: 8px;
 		// Set the blur shadow
 		box-shadow:
@@ -723,6 +723,9 @@
 		}
 
 		&.actions {
+			display:flex;
+			flex-wrap: wrap;
+			justify-content:space-evenly;
 			cursor: default;
 			list-style: none;
 			padding-left: 0;
@@ -730,7 +733,7 @@
 
 			li {
 				display: inline-block;
-				padding: 0 (_size(element-margin) * 0.5) 0 0;
+				padding: (_size(element-margin) * 0.5) 0 0 0;
 				vertical-align: middle;
 
 				&:last-child {
@@ -1071,9 +1074,16 @@
 	/* Header */
 
 		#back_ground {
-			padding: ($size-header-pad * 2) $size-header-pad $size-header-pad $size-header-pad;
-			width: $size-header-width;
-
+			background-attachment:	scroll;
+				background-position:	top left,	center center;
+				background-size:		auto,		cover;
+				left: auto;
+				padding: ($size-header-pad * 1.5) $size-header-pad $size-header-pad $size-header-pad;
+				position: relative;
+				text-align: center;
+				top: auto;
+				width: 100%;
+				display: block;
 			h1 {
 				font-size: 1.25em;
 
@@ -1100,10 +1110,10 @@
 	/* Main */
 
 		#main {
-			margin-left: $size-header-width;
+			margin-left: 0;
 			max-width: none;
 			padding: ($size-header-pad * 2) $size-header-pad $size-header-pad $size-header-pad;
-			width: calc(100% - #{$size-header-width});
+			width: 100%;
 		}
 
 }
