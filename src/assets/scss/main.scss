@@ -392,10 +392,35 @@
 		letter-spacing: -1px; 
 	}
 }
+.carousel{
+	.slide{
+		img{
+			max-height: 70vh;
+		}
+	}
+	
+}
 .imageViewer{
-	width: 100vw;
-	position: relative;
-	left: calc(-50vw + 50%);
+	
+	img{
+		height: 100%;
+		width: auto;
+		object-fit: contain;
+
+		// margin: auto;
+		// z-index: 999;
+		// width: 80%;
+		// top: 0; left: 0; bottom: 0; right: 0;
+		// bottom: 0;
+		// left: 0;
+		// margin: auto;
+		// overflow: auto;
+		// position: absolute;
+		// right: 0;
+		// top: 0;
+		// -o-object-fit: contain;
+		// object-fit: contain;
+	}
 }
 /* Pricing */
 
@@ -678,14 +703,6 @@
 
 
 	ul {
-		list-style: disc;
-		margin: 0 0 _size(element-margin) 0;
-		padding-left: 1em;
-
-		li {
-			padding-left: 0.5em;
-		}
-
 		&.alt {
 			list-style: none;
 			padding-left: 0;
@@ -966,37 +983,12 @@
 	}
 /* Footer */
 	#footer {
+		margin-top: 65vh;
 		.icons {
-			margin: (_size(element-margin) * 0.5) ($size-header-pad * 0.5) 0 0;
+			margin: (_size(element-margin) * 0.5) ($size-header-pad * 0.5) 10px 0;
 
 			a {
 				color: _palette(accent2, fg-light);
-			}
-		}
-
-		.copyright {
-			color: _palette(accent2, fg-light);
-			font-size: 0.8em;
-			list-style: none;
-			margin: (_size(element-margin) * 0.5) 0 0 0;
-			padding: 0;
-
-			li {
-				border-left: solid 1px _palette(accent2, border);
-				display: inline-block;
-				line-height: 1em;
-				margin-left: 0.75em;
-				padding-left: 0.75em;
-
-				&:first-child {
-					border-left: 0;
-					margin-left: 0;
-					padding-left: 0;
-				}
-
-				a {
-					color: inherit;
-				}
 			}
 		}
 	}
@@ -1096,15 +1088,7 @@
 	/* Footer */
 
 		#footer {
-			.copyright {
-				li {
-					border-left-width: 0;
-					display: block;
-					line-height: 2.25em;
-					margin-left: 0;
-					padding-left: 0;
-				}
-			}
+		margin-top:0;
 		}
 
 	/* Main */
@@ -1172,25 +1156,13 @@
 			#footer {
 				bottom: auto;
 				left: auto;
-				padding: $size-header-pad $size-header-pad;
+				padding: $size-header-pad $size-header-pad 0;
 				position: relative;
 				text-align: center;
 				width: 100%;
 
 				.icons {
-					margin: 0 0 (_size(element-margin) * 0.5) 0;
-				}
-
-				.copyright {
-					margin: 0 0 (_size(element-margin) * 0.5) 0;
-
-					li {
-						border-left-width: 1px;
-						display: inline-block;
-						line-height: 1em;
-						margin-left: 0.75em;
-						padding-left: 0.75em;
-					}
+					margin: 10vh 0 (_size(element-margin) * 0.5) 0;
 				}
 			}
 
@@ -1346,16 +1318,7 @@
 		/* Footer */
 
 			#footer {
-				.copyright {
-					li {
-						border-left-width: 0;
-						display: block;
-						line-height: 2.25em;
-						margin-left: 0;
-						padding-left: 0;
-						padding-bottom: 0;
-					}
-				}
+			
 			}
 
 	}

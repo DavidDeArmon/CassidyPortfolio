@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-import Carousel, { Modal, ModalGateway } from "react-images";
+import { Carousel } from 'react-responsive-carousel';
 // import Img from "gatsby-image";
 
 class GalleryUtil extends Component {
     constructor() {
-        super();
         this.state = {
             viewerIsOpen: false,
             selectedIndex: 0
@@ -17,7 +16,7 @@ class GalleryUtil extends Component {
             selectedIndex: id
         }));
     }
-    renderGallery(images) {
+    createGallery(images) {
         if (!images) return;
 
         const gallery = images.map((pic) => {
@@ -32,8 +31,7 @@ class GalleryUtil extends Component {
                         this.toggleViewer(pic.id);
                     }}
                 >
-                    {/* <Img fixed={pic.thumbnail}/> */}
-                    <img src={pic.thumbnail} alt={pic.caption} />
+                    <img  src={pic.thumbnail} alt={pic.caption} />
                 </a>
             );
         });
@@ -44,28 +42,32 @@ class GalleryUtil extends Component {
             </div>
         );
     }
+    createCarousel(images){
+        if (!images) return;
+
+        let carouselImages = images.map((pic) => {
+            return (
+                <div key={pic.id}>
+                    <img src={pic.source} alt={pic.caption} />
+                </div>
+            );
+        });
+        console.log('createcarousel')
+        return carouselImages;
+    }
 
     render() {
         const { images } = this.props;
         const { selectedIndex, viewerIsOpen } = this.state;
         return (
-            <div>
-                {this.renderGallery(images)}
-                <ModalGateway>
+            <>
                     {viewerIsOpen ? (
-                        <Modal onClose={this.toggleViewer}>
-                            <Carousel
-                                currentIndex={selectedIndex - 1}
-                                views={images.map(x => ({
-                                    ...x,
-                                    srcset: x.srcSet,
-                                    caption: x.title
-                                }))}
-                            />
-                        </Modal>
+                        <Carousel className="imageViewer" selectedItem={selectedIndex} showThumbs={false} showArrows={false} showIndicators={false} infiniteLoop={false} >
+                            {this.createCarousel(images)}
+                        </Carousel>
                     ) : null}
-                </ModalGateway>
-            </div>
+                    {this.createGallery(images)}
+            </>
 
         )
     }

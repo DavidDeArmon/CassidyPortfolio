@@ -19,25 +19,52 @@ const CATEGORIES = [
 ];
 
 class GalleriesOne extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props)
         this.state = {
             categoryIsOpen: false,
-            openCategory: 0
         };
     }
     openCategory = (openCategory) => {
-        this.setState({ categoryIsOpen: true, openCategory });
+        this.setState({ categoryIsOpen: true});
+        this.props.openGalleryCategory(openCategory)
     }
     closeCategory = () => {
         this.setState({ categoryIsOpen: false });
+        this.props.closeGalleryCategory()
     }
+    createGallery(images) {
+        if (images.length<1) return;
+
+        const gallery = images.map((pic) => {
+            return (
+                <a
+                    key={pic.id}
+                    className="image thumb"
+                    id="noFlex"
+                    href={pic.source}
+                    onClick={e => {
+                        e.preventDefault();
+                        this.props.toggleViewer(pic.id);
+                    }}
+                >
+                    <img  src={pic.thumbnail} alt={pic.caption} />
+                </a>
+            );
+        });
+
+        return (
+            <div className="gallery">
+                {gallery}
+            </div>
+        );
+    }
+
     render() {
         let displayCategory
-        let openCategory = this.state.openCategory
-        if (openCategory === 0) {
+        if (this.props.openCategory === 0) {
             displayCategory = <div className='gallery'>
-                <h2>Categories</h2>
+                <h2>Galleries</h2>
                 {CATEGORIES.map((e) => (
                     <button className='button' key = {e.id} onClick={()=>this.openCategory(e.id)}>
                         <img src={e.thumbnail} alt={e.title} />
@@ -46,11 +73,12 @@ class GalleriesOne extends React.Component {
                 ))}
             </div>
         } else {
-            displayCategory = <GalleriesTwo openCategory={openCategory} />
+            let imgArr = GalleriesTwo(this.props.openCategory);
+            displayCategory = this.createGallery(imgArr)
         }
         return (
             <div id="categoryBox" >
-                {displayCategory}
+               {displayCategory}
             </div>
         )
     }

@@ -1,6 +1,3 @@
-import React from 'react'
-import GalleryUtil from './Gallery'
-
 import engage1 from '../../assets/images/engagements/emmaChris (1).webp'
 import engage2 from '../../assets/images/engagements/emmaChris (2).webp'
 import engage3 from '../../assets/images/engagements/emmaChris (3).webp'
@@ -785,17 +782,15 @@ const MATERNITY_IMAGES = [
     { id: 41, source:maternity41, thumbnail: maternity41, caption: 'Jared and Annika'},
 ];
 
-function GalleriesTwo(props) {
+function GalleriesTwo(openCategory) {
     let gallery = []
-    if (props.openCategory === 1 ){ gallery = ENGAGEMENT_IMAGES }
-    if (props.openCategory === 2 ){ gallery = BRIDAL_IMAGES }
-    if (props.openCategory === 3 ){ gallery = WEDDING_IMAGES }
-    if (props.openCategory === 4 ){ gallery = PORTRAIT_IMAGES }
-    if (props.openCategory === 5 ){ gallery = FAMILY_IMAGES }
-    if (props.openCategory === 6 ){ gallery = MATERNITY_IMAGES }
-    return (
-        <GalleryUtil images={gallery} />
-    )
+    if (openCategory === 1 ){ gallery = ENGAGEMENT_IMAGES }
+    if (openCategory === 2 ){ gallery = BRIDAL_IMAGES }
+    if (openCategory === 3 ){ gallery = WEDDING_IMAGES }
+    if (openCategory === 4 ){ gallery = PORTRAIT_IMAGES }
+    if (openCategory === 5 ){ gallery = FAMILY_IMAGES }
+    if (openCategory === 6 ){ gallery = MATERNITY_IMAGES }
+    return gallery
 }
 
 export default GalleriesTwo

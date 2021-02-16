@@ -21,10 +21,9 @@
     "react": "^16.14.0",
     "react-dom": "^16.14.0",
     "react-helmet": "^5.2.1",
-    "react-images": "^1.1.7",
     "react-load-script": "0.0.6",
     "react-modal": "^3.11.2",
-    "react-responsive-carousel": "^3.2.10",
+    "react-responsive-carousel": "^3.2.11",
     "sharp": "^0.23.4",
     "typescript": "^3.9.7"
   },
