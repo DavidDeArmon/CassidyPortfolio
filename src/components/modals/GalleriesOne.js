@@ -17,7 +17,7 @@ import abbyBen from '../../assets/images/maternity/abbyBen (2).webp'
 import dallinMarisa from '../../assets/images/maternity/dallinMarisa (1).webp'
 import dannyPeyton from '../../assets/images/maternity/dannyPeyton (3).webp'
 import jonHaylie from '../../assets/images/jonHaylie/jonHaylie (7).webp'
-import ellora from '../../assets/images/ellora/ellora (1).webp'
+import ellora from '../../assets/images/ellora/ellora (5).webp'
 
 
 const CATEGORIES = [
