@@ -14,6 +14,7 @@ class HomeIndex extends React.Component {
                     <html lang="en"></html>
                     <title>{siteTitle}</title>
                     <meta name="description" content={siteDescription}/>
+                    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
                 </Helmet>
                 <Main />
             </Template>

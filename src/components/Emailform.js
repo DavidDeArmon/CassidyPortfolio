@@ -17,6 +17,13 @@ class EmailForm extends React.Component {
         xhr.send(data);
     }
     render() {
+        window.onload = function() { 
+            var el = document.getElementById('g-recaptcha-response'); 
+            if (el) { 
+              el.setAttribute('required', 'required'); 
+            } 
+          }
+          
         return (
             <form
                 onSubmit={this.submitForm}
@@ -30,7 +37,8 @@ class EmailForm extends React.Component {
                         <div className="12u"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
                     </div>
                     <ul className="actions">
-                        <li><input type="submit" value="Send Message" /></li>
+                        <li><input type="submit" value="Send Message" /></li><br/>
+                        <div className="g-recaptcha" data-sitekey="6LfSZo0bAAAAAFm6V7nx_s8rb5FNGDrHgP7tgaP4"></div>
                     </ul>
                 </div>
 
