@@ -16,14 +16,13 @@ class EmailForm extends React.Component {
         };
         xhr.send(data);
     }
+    componentDidMount(){
+        var el = document.getElementById('g-recaptcha-response'); 
+        if (el) { 
+          el.setAttribute('required', 'required'); 
+        } 
+      }
     render() {
-        window.onload = function() { 
-            var el = document.getElementById('g-recaptcha-response'); 
-            if (el) { 
-              el.setAttribute('required', 'required'); 
-            } 
-          }
-          
         return (
             <form
                 onSubmit={this.submitForm}
