@@ -584,7 +584,6 @@
 		&:before {
 			@include vendor('transition', 'opacity #{_duration(transition)} ease-in-out');
 			border-radius: _size(border-radius);
-			background: url('images/overlay.png');
 			content: '';
 			display: block;
 			height: 100%;
@@ -624,7 +623,6 @@
 				}
 
 				&:before {
-					background: url('images/overlay.png'), url('images/overlay.png');
 					opacity: 1.0;
 				}
 			}
